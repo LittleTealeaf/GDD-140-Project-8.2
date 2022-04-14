@@ -2,7 +2,6 @@
 
 const FRAMERATE = 60;
 const CART_VELOCITY = 100;
-// const PARTICLE_GRAVITY = 3;
 const RAIL_DENSITY = 40;
 const RAIL_OFFSET = 10;
 const RAIL_WIDTH = 100;
