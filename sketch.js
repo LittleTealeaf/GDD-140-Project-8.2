@@ -26,14 +26,16 @@ class RockWall {
 
         //Begins shape
         beginShape();
+        vertex(this.x - 10 * this.width,0);
         vertex(this.x,0);
 
-        for(var y = 0; y < height; y+=6) {
+        for(var y = 0; y < height; y+=10) {
             //Renders based on noise and positional arguments
             vertex(this.x + noise(this.x,(y + this.y) / 60) * (this.width - this.min) + this.min,y)
         }
         //closes
         vertex(this.x,height);
+        vertex(this.x - 10 * this.width,height)
         endShape(CLOSE);
     }
 }
