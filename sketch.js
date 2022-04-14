@@ -67,7 +67,6 @@ function setup() {
 }
 
 function draw() {
-    background(20);
     rocks.forEach(wall => wall.render());
     randomSeed(frameCount);
     renderForeground();
